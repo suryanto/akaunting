@@ -1,0 +1,14 @@
+name: akaunting
+recipe: laravel
+config:
+  webroot: .
+  php: 7.4
+# Get nice URL's
+proxy:
+  pma:
+    - pma.akaunting.lndo.site
+services:
+  pma:
+    type: phpmyadmin
+    hosts:
+      - database
